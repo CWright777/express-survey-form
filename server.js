@@ -18,7 +18,6 @@ app.post('/result', function(req,res){
     language: req.body.language,
     comment: req.body.comment
   }
-  console.log("POST DATA \n\n", req.body)
   res.render("result",{user_info: user_info})
 })
 
